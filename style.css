@@ -22,11 +22,12 @@ a {
 
 .logo {
     color: var(--black, #121723);
-    font-family: Russo One;
-    font-size: 42px;
+    font-family: "Russo One", sans-serif;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: 78.188%; /* 32.839px */
+    line-height: 78.188%;
+    letter-spacing: -1.5px;
 }
 
 .nav-container {
@@ -34,6 +35,15 @@ a {
     align-items: center;
     gap: 50px;
 }
+
+.nav-burger-container {
+    display: none;
+}
+
+.nav-burger-container > img {
+    width: 40px;
+}
+
 
 .nav-item {
     color: #121723;
@@ -77,8 +87,12 @@ img {
 }
 
 .image-container {
-    width: 348px;
-    height: 348px;
+    width: 371px;
+    height: 254px;
+}
+
+.image-container > img {
+    object-fit: cover;
 }
 
 .content {
@@ -170,4 +184,27 @@ img {
     font-weight: 700;
     line-height: normal;
     margin: 0 auto;
+}
+
+@media (max-width: 425px) {
+    .header-container {
+        padding: 15px;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .nav-burger-container {
+        display: flex;
+    }
+
+    .image-container {
+        width: 190px;
+        height: 120px;
+    }
+
+    .raw {
+        justify-content: center;
+    }
 }
