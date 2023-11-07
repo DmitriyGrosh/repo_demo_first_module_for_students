@@ -44,7 +44,6 @@ a {
     width: 40px;
 }
 
-
 .nav-item {
     color: #121723;
     font-family: 'Anonymous Pro', monospace;
@@ -200,11 +199,12 @@ img {
     }
 
     .image-container {
-        width: 190px;
-        height: 120px;
+        width: 343px;
+        height: 254px;
     }
 
     .raw {
+        /* flex-direction: column; */
         justify-content: center;
     }
 }
